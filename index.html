@@ -24,25 +24,29 @@
                 Rock, Paper, Scissors
             </h2>
 <hr>
-            <p>The Rules: paper beats rock, rock beats scissors, scissors beats papers</p>
+            <p>🚨THE RULES🚨</p>
+            <p>Rock crushes scissors - scissors cut paper - paper covers rock</p>
             <label>
-                Rock
-                <input type="radio" name="rps">
+                Rock🪨
+                <input type="radio" name="rps" value="rock"/>
+                <img src="./assets/rock.png"/>
             </label>
             <label>
                 Paper
-                <input type="radio" name="rps">
+                <input type="radio" name="rps" value="paper"/>
+                <img src="./assets/paper.jpeg"/>
             </label>
             <label>
                 Scissors
-                <input type="radio" name="rps">
+                <input type="radio" name="rps" value="scissors"/>
+                <img src="./assets/scissors.png"/>
             </label>
 
-            <button id="play-button">Play!</button>
-
-            <div id="wins"></div>
-            <div id="losses"></div>
-            <div id="results"></div>
+            <input type="button" value="Shoot!" id="shoot-button"/>
+            <div id="current-result"></div>
+            <div id="wins-tot"></div>
+            <div id="losses-tot"></div>
+            <div id="ties-tot"></div>
         </section>
     </main>
 
