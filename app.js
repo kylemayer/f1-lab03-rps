@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { whoWon } from "./utils.js";
+import { isWinner } from "./utils.js";
 
 const button = document.querySelector('#shoot-button');
 const winDiv = document.querySelector('#wins-tot');
@@ -17,12 +17,12 @@ let totalGuess = 0;
 
 // set event listeners 
 button.addEventListener('Click', () => {
-  const compChoice = choice[Math.floor(Math.random()*choice.length)];
+  const compSelect = choice[Math.floor(Math.random()*choice.length)];
 
   const selectedRadio = document.querySelector('input:checked');
   const userGuess = selectedRadio.value;
 
-  const winner = whoWon(userGuess, compChoice);
+  const winner = isWinner(userGuess, compSelect);
   if (winner === 1){
     wins++;
     results.textContent = 'your guess won!';
@@ -33,7 +33,7 @@ button.addEventListener('Click', () => {
     results.textContent = 'your guess lost!';
   }
 
-console.log(compChoice);
+console.log(compSelect);
 totalGuess++;
 
   // update DOM to reflect the new state

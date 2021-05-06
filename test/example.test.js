@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-// import { example } from '../utils.js';
+// import { isWinner } from '../utils.js';
 
 const test = QUnit.test;
 
