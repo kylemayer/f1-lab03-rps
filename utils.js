@@ -1,3 +1,3 @@
-export function isWinner(userGuess, compSelect) {
+export function didUserWin(userGuess, compSelect) {
     return userGuess === compSelect;   
 }

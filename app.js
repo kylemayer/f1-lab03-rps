@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-import { isWinner } from "./utils.js";
+import { didUserWin } from "./utils.js";
 
 const button = document.querySelector('#shoot-button');
 const winDiv = document.querySelector('#wins-tot');
@@ -22,7 +22,7 @@ button.addEventListener('Click', () => {
   const selectedRadio = document.querySelector('input:checked');
   const userGuess = selectedRadio.value;
 
-  const winner = isWinner(userGuess, compSelect);
+  const winner = didUserWin(userGuess, compSelect);
   if (winner === 1){
     wins++;
     results.textContent = 'your guess won!';
