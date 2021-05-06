@@ -27,10 +27,10 @@ button.addEventListener('click', () => {
   const userGuess = selectedRadio.value;
 
   const winner = didUserWin(userGuess, compSelect);
-  if (winner === 1){
+  if (winner === 'userWin'){
     wins++;
     results.textContent = 'your guess won!';
-  } else if (winner === 0){
+  } else if (winner === 'userTie'){
     ties++;
     results.textContent = 'your guess tied';
   } else {

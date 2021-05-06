@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
@@ -26,20 +27,20 @@
 <hr>
             <p>🚨THE RULES🚨</p>
             <p>Rock crushes scissors - scissors cut paper - paper covers rock</p>
-            <label>
-                🪨
-                <input type="radio" name="rps" value="rock" class="selection" checked></input>
+            <label class="selection">
+                <i class="far fa-hand-rock"></i>
+                <input type="radio" name="rps" value="rock" checked/>
             </label>
-            <label>
-                📃
-                <input type="radio" name="rps" value="paper" class="selection"/>
+            <label class="selection">
+                <i class="far fa-hand-paper"></i>
+                <input type="radio" name="rps" value="paper"/>
             </label>
-            <label>
-                ✂️
-                <input type="radio" name="rps" value="scissors" class="selection"/>
+            <label class="selection">
+                <i class="far fa-hand-scissors"></i>
+                <input type="radio" name="rps" value="scissors"/>
             </label>
 
-            <input type="button" value="Shoot!" id="shoot-button"/>
+            <button value="Shoot!" id="shoot-button">Shoot!</button>
             <div id="current-result"></div>
             <div id="wins-tot"></div>
             <div id="losses-tot"></div>

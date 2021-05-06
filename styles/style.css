@@ -122,8 +122,11 @@ img {
     height: 100px;
 }
 
-.selection {
-    display:  ;
+input {
+    display: ;
 }
 
+input:checked + label {
+    border: solid 1px black;
+}
 
