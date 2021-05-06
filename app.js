@@ -2,21 +2,25 @@
 import { didUserWin } from "./utils.js";
 
 const button = document.querySelector('#shoot-button');
+const results= document.querySelector('#current-result');
 const winDiv = document.querySelector('#wins-tot');
 const loseDiv = document.querySelector('#losses-tot');
-const results= document.querySelector('#current-result');
 const tiesDiv = document.querySelector('#ties-tot');
 
 console.log(button, winDiv, loseDiv, results, tiesDiv);
 
 // initialize state
 const choice = ['rock', 'paper', 'scissors'];
+console.log(choice[0]);
+console.log(choice[1]);
+console.log(choice[2]);
+console.log(choice.length);
 let wins = 0;
-let ties = 0
+let ties = 0;
 let totalGuess = 0;
 
 // set event listeners 
-button.addEventListener('Click', () => {
+button.addEventListener('click', () => {
   const compSelect = choice[Math.floor(Math.random()*choice.length)];
 
   const selectedRadio = document.querySelector('input:checked');
