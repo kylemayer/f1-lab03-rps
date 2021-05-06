@@ -1,3 +1,3 @@
-export function didUserGuessCorrect(userGuess, computerThrow) {
-    return userGuess === computerThrow;
+export function whoWon(userGuess, compChoice) {
+    return userGuess === compChoice;   
 }
